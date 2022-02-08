@@ -9,5 +9,10 @@ body {
   background: #090909;
 }
 #bruh {
-  font-family: "Ubuntu";  
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  font-family: "Ubuntu";
 }
