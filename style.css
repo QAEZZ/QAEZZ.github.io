@@ -1,8 +1,12 @@
+@import url(//fonts.googleapis.com/css?family=Ubuntu+Mono);
 * {
     padding: 0;
     margin: 0;
     font-family: "Ubuntu Mono";
     box-sizing: border-box;
+}
+p, b, i, u, h1, h2, h3, h4, h5, h6 {
+    font-family: "Ubuntu Mono";
 }
 body {
     color: azure;
@@ -71,6 +75,61 @@ body {
     width: 100%;
     object-fit: cover;
     height: 100vh;
+}
+#gallery-container {
+    /* display: inline-block; */
+    width: 100%;
+    border: 2px solid red;
+}
+#gallery-left {
+    text-align: center;
+    width: 40%;
+    float: left;
+    height: 200vh;
+    border: 2px dashed greenyellow;
+}
+#gallery-left #table {
+    top: 10%;
+    margin-top: 10%;
+    position: sticky;
+    padding: 1%;
+    background-color: rgb(35, 35, 35);
+    height: 80vh;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#gallery-right {
+    width: 60%;
+    float: right;
+    height: 200vh;
+    border: 2px dotted blue;
+}
+.gallery-collection {
+    cursor: zoom-in;
+    background-size: cover;
+    padding: 20%;
+    margin: 5%;
+    border: 5px dotted magenta;
+    opacity: 80%;
+    filter: blur(1px) grayscale(40%);
+    transition: all .3s ease;
+}
+.gallery-collection #name {
+    filter: blur(0px);
+}
+#gc1 {
+    background-image: url("media/img1.jpg");
+}
+#gc2 {
+    background-image: url("media/img2.jpg");
+}
+#gc3 {
+    background-image: url("media/img3.jpg");
+}
+.gallery-collection:hover {
+    filter: blur(0px) grayscale(0%);
+    opacity: 100%;
 }
 
 /* Fading animations */
