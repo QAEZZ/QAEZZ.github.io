@@ -79,16 +79,17 @@ body {
 #gallery-container {
     /* display: inline-block; */
     width: 100%;
-    border: 2px solid red;
+    /*border: 2px solid red;*/
 }
 #gallery-left {
     text-align: center;
     width: 40%;
     float: left;
-    height: 200vh;
-    border: 2px dashed greenyellow;
+    height: 300vh;
+    /*border: 2px dashed greenyellow;*/
 }
 #gallery-left #table {
+    display: block;
     top: 10%;
     margin-top: 10%;
     position: sticky;
@@ -99,18 +100,31 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+#gallery-left #table div {
+    display: block;
+    flex-direction: column;
+    word-wrap: break-word;
+    white-space: normal;
+    cursor: pointer;
+    float: left;
+    font-size: x-large;
+    margin-left: 3%;
+}
+#gallery-left #table div:hover {
+    background-color: rgb(100, 0, 0);
+}
 #gallery-right {
     width: 60%;
     float: right;
-    height: 200vh;
-    border: 2px dotted blue;
+    height: 300vh;
+    /*border: 2px dotted blue;*/
 }
 .gallery-collection {
     cursor: zoom-in;
     background-size: cover;
     padding: 20%;
     margin: 5%;
-    border: 5px dotted magenta;
+    /*border: 5px dotted magenta;*/
     opacity: 80%;
     filter: blur(1px) grayscale(40%);
     transition: all .3s ease;
@@ -122,10 +136,13 @@ body {
     background-image: url("media/img1.jpg");
 }
 #gc2 {
-    background-image: url("media/img2.jpg");
+    background-image: url("media/jup1.jpg");
 }
 #gc3 {
-    background-image: url("media/img3.jpg");
+    background-image: url("media/sat1.jpg");
+}
+#gc4 {
+    background-image: url("media/stars1.jpg");
 }
 .gallery-collection:hover {
     filter: blur(0px) grayscale(0%);
