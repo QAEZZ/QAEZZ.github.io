@@ -12,6 +12,17 @@ body {
     color: azure;
     background-color: rgb(50, 50, 50);
 }
+#tag {
+    cursor: pointer;
+    z-index: 9999;
+    position: fixed;
+    font-size: x-large;
+    bottom: 1%;
+    right: 1%;
+}
+#tag:hover {
+    text-decoration: underline;
+}
 #nav-bar {
     z-index: 999;
     position: fixed;
