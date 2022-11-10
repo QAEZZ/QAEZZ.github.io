@@ -9,35 +9,52 @@
             <!-- preload images -->
             <link rel="preload" href="media/img1.jpg" as="image">
             <link rel="preload" href="media/img2.jpg" as="image">
-            <link rel="preload" hred="media/im3.jpg" as="image">
+            <link rel="preload" hred="media/img3.jpg" as="image">
+            <link rel="preload" hred="media/jup1.jpg" as="image">
+            <link rel="preload" hred="media/jup1cov.png" as="image">
+            <link rel="preload" hred="media/sat1.jpg" as="image">
+            <link rel="preload" hred="media/stars1.jpg" as="image">
 
         </head>
         <body>
             <div id="nav-bar">
                 <ul>
-                    <li><a onclick="alert('coming soon!');">About</a></li>
+                    <li><a target="_blank" href="https://top.gg/bot/956916204851851335">Add my Discord Bot!</a></li>
                     <li><a onclick="document.getElementById('contact-modal').style.display = 'block'">Contact</a></li>
-                  </ul>
+                    <li><a onclick="alert('coming soon!');">About</a></li>
+                </ul>
             </div>
 
             <div class="slideshow-div">
 
                 <div class="slideshow-slide">
-                    <div class="slideshow-slide-number">1 / 3</div>
+                    <div class="slideshow-slide-number">1 / 5</div>
                     <img src="media/img1.jpg">
                     <div class="slideshow-slide-text">Nov. 8th, 2022 - Total Lunar Eclipse - Canon EOS 77D</div>
                 </div>
 
                 <div class="slideshow-slide">
-                    <div class="slideshow-slide-number">2 / 3</div>
+                    <div class="slideshow-slide-number">2 / 5</div>
                     <img src="media/img2.jpg">
                     <div class="slideshow-slide-text">Nov. 8th, 2022 - Total Lunar Eclipse - Canon EOS 77D</div>
                 </div>
                 
                 <div class="slideshow-slide">
-                    <div class="slideshow-slide-number">3 / 3</div>
+                    <div class="slideshow-slide-number">3 / 5</div>
                     <img src="media/img3.jpg">
                     <div class="slideshow-slide-text">Nov. 8th, 2022 - Total Lunar Eclipse - Canon EOS 77D</div>
+                </div>
+
+                <div class="slideshow-slide">
+                    <div class="slideshow-slide-number">4 / 5</div>
+                    <img src="media/jup1.jpg">
+                    <div class="slideshow-slide-text">Nov. 9th, 2022 - Jupiter and 3 Moons - Canon EOS 77D</div>
+                </div>
+
+                <div class="slideshow-slide">
+                    <div class="slideshow-slide-number">5 / 5</div>
+                    <img src="media/stars1.jpg">
+                    <div class="slideshow-slide-text">Jun. 24th, 2022 - A Lot of Stars - Canon EOS 77D</div>
                 </div>
 
             </div>
@@ -47,22 +64,38 @@
                     <div id="gallery-left">
                         <div id="table">
                             <h2>Content</h2>
+                            <div onclick="gotohash('gc1');">Lunar Pictures</div>
+                            <br />
+                            <br />
+                            <div onclick="gotohash('gc2');">Jupiter Pictures</div>
+                            <br />
+                            <br />
+                            <div onclick="gotohash('gc3');">Saturn Pictures</div>
+                            <br />
+                            <br />
+                            <div onclick="gotohash('gc4');">Star Pictures</div>
+                            <br />
                         </div>
                     </div>
                     <div id="gallery-right">
                         <!-- collection 1 -->
-                        <div class="gallery-collection" id="gc1">
+                        <div class="gallery-collection" id="gc1" onclick="alert('coming soon');">
                             <h3 id="name">Lunar Pictures</h3>
                         </div>
 
                         <!-- collection 2 -->
-                        <div class="gallery-collection" id="gc2">
+                        <div class="gallery-collection" id="gc2" onclick="alert('coming soon');">
                             <h3 id="name">Jupiter Pictures</h3>
                         </div>
 
                         <!-- collection 3 -->
-                        <div class="gallery-collection" id="gc3">
+                        <div class="gallery-collection" id="gc3" onclick="alert('coming soon');">
                             <h3 id="name">Saturn Pictures</h3>
+                        </div>
+
+                        <!-- collection 4 -->
+                        <div class="gallery-collection" id="gc4" onclick="alert('coming soon');">
+                            <h3 id="name">Star Pictures</h3>
                         </div>
                     </div>
                 </span>
