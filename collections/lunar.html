@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Real Astrophotography</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="collection-style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu+Mono">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!-- preload images -->
+    <link rel="preload" href="../media/min/img1-min.jpg" as="image">
+    <link rel="preload" href="../media/min/img2-min.jpg" as="image">
+    <link rel="preload" href="../media/min/img3-min.jpg" as="image">
+    <link rel="preload" href="../media/min/im4-min.jpg" as="image">
+    <link rel="preload" hred="../media/min/jup1-min.jpg" as="image">
+    <link rel="preload" hred="../media/min/jup1cov-min.png" as="image">
+    <link rel="preload" hred="../media/min/sat1-min.jpg" as="image">
+    <link rel="preload" hred="../media/min/stars1-min.jpg" as="image">
+
+    <!-- embed shit -->
+    <meta name="theme-color" content="#36393f" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Real Astrophotography Lunar Gallery" />
+    <meta property="og:url" content="https://QAEZZ.github.io" />
+    <meta property="og:description" content="My Lunar Images!" />
+    <meta property="article:author" content="@realastrophotography" />
+    <meta property="og:site_name" content="Real Astrophotography" />
+    <meta property="og:image" content="https://qaezz.github.io/media/img1.jpg" />
+    <meta property="og:image:width" content="2048" />
+    <meta property="og:image:height" content="1090" />
+    <meta property="og:locale" content="en_US" />
+
+</head>
+
+<body>
+    <div id="nav-bar">
+        <ul>
+            <li><a target="_blank" href="https://top.gg/bot/956916204851851335">Add my Discord Bot!</a></li>
+            <li><a onclick="document.getElementById('contact-modal').style.display = 'block';">Contact</a></li>
+            <li><a onclick="alert('coming soon!');">About</a></li>
+            <li><a href="../index.html">Back</a></li>
+        </ul>
+    </div>
+
+    <div id="tag" onclick="document.getElementById('contact-modal').style.display = 'block';">
+        <p><b>@</b><i>realastrophotography</i></p>
+    </div>
+
+
+    <div id="s-gallery-container">
+        <span>
+            <div id="s-gallery-left">
+                <!-- image 1 -->
+                <div>
+                    <div class="s-gallery-collection" style="background-image:url('../media/min/img1-min.jpg');"
+                        onclick="displayImg('img1');"></div>
+                    <div class="hide" style="position: absolute;text-align: left;top: 2%;left: 2%;opacity: 70%;">
+                        <h3>Nov. 8th 2022 Total Lunar Eclipse</h3>
+                        <h4>Canon EOS 77D<br />Canon EF 75-300mm III</h4>
+                        <h6>300<i>mm</i><br />ƒ/5.6<br />ISO1600<br />1"</h6>
+                    </div>
+                </div>
+
+                <!-- image 3 -->
+                <div>
+                    <div class="s-gallery-collection" style="background-image:url('../media/min/img3-min.jpg');" onclick="displayImg('img3');"></div>
+                    <div class="hide" style="position: absolute;text-align: left;top: 62%;left: 2%;opacity: 70%;">
+                        <h3>Nov. 8th 2022 Total Lunar Eclipse</h3>
+                        <h4>Canon EOS 77D<br />Canon EF 75-300mm III</h4>
+                        <h6>300<i>mm</i><br />ƒ/5.6<br />ISO100<br />2"</h6>
+                    </div>
+                </div>
+            </div>
+            <div id="s-gallery-right">
+                <!-- image 2 -->
+                <div>
+                    <div class="s-gallery-collection" style="background-image:url('../media/min/img2-min.jpg');" onclick="displayImg('img2');"></div>
+                    <div class="hide" style="position: absolute;text-align: left;top: 2%;left: 52%;opacity: 70%;">
+                        <h3>Nov. 8th 2022 Total Lunar Eclipse</h3>
+                        <h4>Canon EOS 77D<br />Canon EF 75-300mm III</h4>
+                        <h6>110<i>mm</i><br />ƒ/4.5<br />ISO100<br />2"</h6>
+                    </div>
+                </div>
+
+                <!-- image 4 -->
+                <div>
+                    <div class="s-gallery-collection" style="background-image:url('../media/min/img4-min.jpg');" onclick="displayImg('img4');"></div>
+                    <div class="hide" style="position: absolute;text-align: left;top: 62%;left: 52%;opacity: 70%;">
+                        <h3>Nov. 8th 2022 Total Lunar Eclipse</h3>
+                        <h4>Canon EOS 77D<br />Canon EF 75-300mm III</h4>
+                        <h6>300<i>mm</i><br />ƒ/5.6<br />ISO6400<br />1"</h6>
+                    </div>
+                </div>
+            </div>
+        </span>
+    </div>
+
+    <script type="text/javascript" src="../script.js"></script>
+
+    <!-- contact-modal -->
+    <div id="contact-modal" class="w3-modal w3-animate-opacity">
+        <div class="w3-modal-content w3-black" style="padding:32px">
+            <div class="w3-container w3-black">
+                <i onclick="document.getElementById('contact-modal').style.display='none'"
+                    class="fa fa-remove w3-transparent w3-button w3-xlarge w3-right"></i>
+                <h2><b>@</b><i>realastrophotography</i> - on Instagram and TikTok</h2>
+                <button type="button" class="w3-button w3-block w3-padding-large w3-black w3-margin-bottom"
+                    onclick="document.getElementById('contact-modal').style.display='none'">Continue</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- size-modal -->
+    <div id="size-modal" class="w3-modal w3-animate-opacity">
+        <div class="w3-modal-content w3-black" style="padding:32px">
+            <div class="w3-container w3-black">
+                <i onclick="document.getElementById('size-modal').style.display='none'"
+                    class="fa fa-remove w3-transparent w3-button w3-xlarge w3-right"></i>
+                <h2>File Size</h2>
+                <span>
+                    <button id="size-button" type="button" class="w3-button" id="size-button"
+                        onclick="sizeClick('original');">Original</button>
+                    <button id="size-button" type="button" class="w3-button" id="size-button"
+                        onclick="sizeClick('min');">Min</button>
+                </span>
+                <br />
+                <button type="button" id="cancel-button" class="w3-button w3-block"
+                    onclick="document.getElementById('size-modal').style.display='none'">Cancel</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
