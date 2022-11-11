@@ -148,16 +148,16 @@ body {
     filter: blur(0px);
 }
 #gc1 {
-    background-image: url("media/img1.jpg");
+    background-image: url("media/min/img1-min.jpg");
 }
 #gc2 {
-    background-image: url("media/jup1.jpg");
+    background-image: url("media/min/jup1-min.jpg");
 }
 #gc3 {
-    background-image: url("media/sat1.jpg");
+    background-image: url("media/min/sat1-min.jpg");
 }
 #gc4 {
-    background-image: url("media/stars1.jpg");
+    background-image: url("media/min/stars1-min.jpg");
 }
 .gallery-collection:hover {
     box-shadow: 0px 0px 30px 20px rgb(30, 30, 30);
